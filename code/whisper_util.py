@@ -10,9 +10,6 @@ from run_on_video.model_utils import build_inference_model
 from tensor_utils import pad_sequences_1d
 from moment_detr.span_utils import span_cxw_to_xx
 
-project_root = "C:/Users/Catholic/PycharmProjects/PythonProject/moment_detr-main/moment_detr-main/moment_detr"
-sys.path.append(project_root)
-
 import subprocess
 import json
 
@@ -210,3 +207,4 @@ def process_video_highlights_from_silence(video_path, checkpoint_path, clip_mode
     title_video = [[max(0, round((st + ed) / 2 - 0.5, 2)), round((st + ed) / 2 + 0.5, 2)] for st, ed, _ in top_10]
 
     return all_highlights, final_moment, title_video
+
