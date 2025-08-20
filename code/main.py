@@ -43,7 +43,6 @@ def delete(result_path):
         return
 
     for filename in os.listdir(result_path):
-        # ✋ "intro"로 시작하는 파일은 건너뛰기
         if filename.lower().startswith("intro"):
             continue
         # 삭제 대상 확장자
