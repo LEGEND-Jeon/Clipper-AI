@@ -1,0 +1,9 @@
+moviepy==1.0.3
+IPython
+openai
+openai-whisper
+git+https://github.com/openai/whisper.git
+ffmpeg
+torchvision
+ftfy
+scipy
